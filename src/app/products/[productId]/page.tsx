@@ -1,18 +1,16 @@
+// app/products/[productId]/ProductClient.tsx
+'use client';
+
+import { useParams } from 'next/navigation';
 import ProductView from '@/component/products/product/product-view';
-import React from 'react'
 
-interface Props {
-    params:{
-        productId: string;
-    }
-}
-function Product({ params }: Props) {
-    const { productId } = params;
+export default function ProductClient() {
+  const params = useParams();
+  const productId = params.productId as string;
+
   return (
-    <div className='p-10'> 
-        <ProductView id={productId} />
+    <div className="p-10">
+      <ProductView id={productId} />
     </div>
-  )
+  );
 }
-
-export default Product
