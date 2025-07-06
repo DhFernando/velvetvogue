@@ -120,6 +120,16 @@ function ProductView({ id }: Props) {
                 </div>
             </div> 
         </div> 
+        <div className='flex justify-center items-center gap-5 mt-10'>
+            <div>
+                <div className='font-bold text-xl'>Subscribe Newsletter</div>
+                <div>Get Latest Updates on Promotions</div>
+            </div>
+            <div className='flex'>
+                <div className=''><input type="text" className='input w-72'/></div>
+                <div><button className='btn bg-black text-white'>Join</button></div>
+            </div>
+        </div>
     </div>
   )
 }
