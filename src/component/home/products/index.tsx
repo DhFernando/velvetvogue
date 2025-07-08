@@ -4,8 +4,8 @@ import React from 'react'
 function HomeProductList() {
   return (
     <div>
-        <div className='text-3xl font-bold my-5'>Best Selling Products</div>
-        <div className='flex flex-wrap gap-5'>
+        <div className='text-xl md:text-3xl font-bold my-5'>Best Selling Products</div>
+        <div className='flex flex-wrap gap-5 justify-center'>
             {Array.from({ length: 8 }).map((_, index) => (
                 <ProductCard key={index} />
             ))}
